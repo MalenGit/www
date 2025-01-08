@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!--link icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo-text">
+                <img src="img-removebg-preview.png" alt="">
+            </div>
+            <div class="menu-text">
+                <ul>
+                    <div id="paper"></div>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="icon-text">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <!-- <i class="fa-solid fa-toggle-on"></i> -->
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="btn-text">
+                <button class="login">Login</button>
+                <button class="sign">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        let willpaper = document.querySelector('#paper');
+        let item = document.querySelectorAll('ul li a');
+
+        function animation(target) {
+            willpaper.style.left = transition.offsetLeft + "px";
+            willpaper.style.width = transition.offsetwidth + "px";
+        }
+
+        item.forEach(Link => {
+            link.addEventListener('click', (e) => {
+                animation(e.target);
+            });
+        });
+        window.addEventListener('load', () => {
+            animation(item[0]);
+        });
+    </script>
+</body>
+</html>
